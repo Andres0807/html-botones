@@ -1,0 +1,444 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+html {
+    background-color: #071952;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+img {
+    width: 50px;
+}
+p {
+    color: rgb(221, 220, 220);
+}
+a {
+    color: rgb(168, 210, 216);
+}
+button {
+    
+    
+    transition: 1s;
+    background-color: #0B666A;
+    opacity: 1;
+    border-radius: 20%;
+    box-shadow: 1.5px 1.5px 3px 0.5px black;
+
+}
+.animacionCasa:hover {
+    transform: scale(1.1);
+    background-color: #35A29F;
+    box-shadow: 0px 0px 20px 5px #49dfda;
+}
+.flexeando {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grindeo {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1.5fr 2fr;
+    grid-template-rows: 1.5fr 1.5fr 1fr 1.5fr 1.5fr;
+}
+.centrar {
+    grid-area: 3/3/-3/-3;
+    display: flex;
+    margin: auto;
+}
+.apps1 {
+    grid-area: 1/2/1/2;
+    display: flex;
+    margin: auto;
+    transition: 0.75s;
+}
+.apps2 {
+    grid-area: 1/4/1/4;
+    display: flex;
+    margin: auto;
+    transition: 0.75s;
+}
+.apps3 {
+    grid-area: 1/3/1/3;
+    display: flex;
+    margin: auto;
+    transition: 0.75s;
+}
+.computadora {
+    grid-area: 2/3/2/3;
+    display: flex;
+    margin: auto;
+    transition: 1s;
+
+}
+.tele {
+    grid-area: 4/3/4/3;
+    display: flex;
+    margin: auto;
+    transition: 1s;
+}
+.programasDeTV1 {
+    grid-area: 5/2/5/2;
+    display: flex;
+    margin: auto;
+    transition: 0.75s;
+
+}
+.programasDeTV2 {
+    grid-area: 5/3/5/3;
+    display: flex;
+    margin: auto;
+    transition: 0.75s;
+}
+.programasDeTV3 {
+    grid-area: 5/4/5/4;
+    display: flex;
+    margin: auto;
+    transition: 0.75s;
+}
+.fondoDev {
+    background-image: url(images/hack-icon.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.apareceDevFondo {
+    filter: invert(100%) sepia(0%) saturate(1054%) hue-rotate(204deg) brightness(117%) contrast(98%);
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: fondoDev;
+}
+@keyframes fondoDev {
+    0% {opacity: 0;}10%{opacity: 1;}20%{opacity: 0;}30%{opacity: 1;}40%{opacity: 0;}50%{opacity: 1;}60%{opacity: 0;}70%{opacity: 1;}80%{opacity: 0;}100%{opacity: 1;}
+}
+
+/*animaciones*/
+
+.Escriti2 {
+    animation-name: adiosEscritorio;
+    animation-duration: 0.2s;
+    animation-delay: 0s;
+    opacity: 0;
+}
+@keyframes adiosEscritorio {
+    from {
+        opacity: 1;
+    }   
+    to{
+        opacity: 0;
+    } 
+}
+.fondoNefli {
+    background-image: url(images/icons8-netflix-48.png);
+    background-size: 175% 175%;
+    background-repeat: no-repeat;
+    background-position: -23.5px -20px;
+    transition: 0s;
+}
+
+.fondoYotube{
+    background-image: url(images/icons8-youtube-play-48.png);
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    background-position: -32px -28px;
+    transition: 0s;
+}
+.fondoTV{
+    background-image: url(images/icons8-programa-de-televisión-48.png);
+    background-size: 200% 250%;
+    background-repeat: no-repeat;
+    background-position: -30px -34px;
+    transition: 0s;
+}
+.fondoDesk {
+    
+    background-image: url(images/icons8-escritorio-64.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.rotarYChau {
+    animation-duration: 0.45s;
+    animation-name: giragira;
+    animation-delay: 0s;
+}
+@keyframes giragira {
+    0%{transform: rotate(0deg);}10%{transform: rotate(-17deg);}20%{transform: rotate(0deg);}30%{transform: rotate(17deg);}40%{transform: rotate(0deg);}50%{transform: rotate(-17deg);}60%{transform: rotate(0deg);}70%{transform: rotate(17deg);}80%{transform: rotate(0deg);}90%{transform: rotate(-17deg);}100%{transform: rotate(0deg);}
+}
+.apli1 {
+    position: relative;
+    top: 88px;
+    right: -83px;
+    z-index: -2;
+    opacity: 0;
+    transform: rotate(170deg);
+}
+
+.gamer {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    opacity: 1;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: mostrarGames;
+}
+@keyframes mostrarGames {
+    0% {
+        top: 88px;
+        right: -83px;
+        transform: rotate(170deg);
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        right: 0px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.dev {
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: mostrarDev;
+    position: relative;
+    top:0px;
+    right: 0px;
+    z-index: 1;
+    opacity: 1;
+
+}
+.apli2 {
+    position: relative;
+    top: 88px;
+    right: 83px;
+    z-index: -2;
+    opacity: 0;
+    transform: rotate(170deg);
+}
+
+@keyframes mostrarDev {
+    from {
+        top: 88px;
+        right: 83px;
+        transform: rotate(170deg);
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        right: 0px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.apli3 {
+    position: relative;
+    top: 88px;
+    right: 0px;
+    z-index: -2;
+    opacity: 0;
+    transform: rotate(170deg);
+}
+
+.escritorio {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    opacity: 1;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: mostrarEscritorio;
+}
+@keyframes mostrarEscritorio {
+    from {
+        top: 88px;
+        right: 0px;
+        transform: rotate(170deg);
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        right: 0px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.aplicasao1 {
+    top: 130px;
+}
+.program1 {
+    position: relative;
+    bottom: 88px;
+    left: 83px;
+    z-index: -2;
+    opacity: 0;
+    transform: rotate(170deg);
+}
+.seriesYPeliculas {
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: mostrarSeries;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    opacity: 1;
+    
+}
+@keyframes mostrarSeries {
+    from{
+        bottom: 88px;
+        left: 83px;
+        transform: rotate(170deg);
+        opacity: 0;
+    }
+    to{
+        bottom: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.program2 {
+    position: relative;
+    bottom: 88px;
+    z-index: -2;
+    opacity: 0;
+    transform: rotate(170deg);
+}
+.cableTV {
+    position: relative;
+    bottom: 0px;
+    z-index: 1;
+    opacity: 1;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: mostrarCable;
+}
+@keyframes mostrarCable {
+    from{
+        bottom: 88px;
+        transform: rotate(170deg);
+        opacity: 0;
+    }
+    to{
+        bottom: 0px;
+        transform: rotate(0deg);
+        opacity: 1;
+    } 
+}
+.program3 {
+    position: relative;
+    bottom: 88px;
+    right: 83px;
+    z-index: -2;
+    opacity: 0;
+    transform: rotate(170deg);
+}
+.plataformaRoja{
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    opacity: 1;
+    z-index: 1;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-name: verVideos;
+}
+@keyframes verVideos {
+    from{
+        bottom: 88px;
+        right: 83px;
+        transform: rotate(170deg);
+        opacity: 0;
+    }
+    to{
+        bottom: 0px;
+        right: 0px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+.programao1 {
+    bottom: 130px;
+}
+.televisa {
+    position: relative;
+    bottom: 75px;
+    z-index: -1;
+    opacity: 0;
+    transform: rotate(170deg);
+
+}
+.mostrarTV {
+    position: relative;
+    bottom: 0px;
+    z-index: 1;
+    opacity: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-name: salirTV;
+}
+@keyframes salirTV {
+    from {
+        bottom: 75px;
+        opacity: 0;
+        transform: rotate(170deg);
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+.compu {
+    position: relative;
+    top: 75px;
+    z-index: -1;
+    opacity: 0;
+    transform: rotate(170deg);
+}
+.compuCorre {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-name: salidaDeCompu;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+@keyframes salidaDeCompu {
+    from{
+        top: 75px;
+        opacity: 0;
+        transform: rotate(170deg);
+    }
+    to {
+        top:0px;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+.gameBooming {
+    animation-name: gamesBoom;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+.gamesFondo {
+    background-image: url(images/boom.png);
+    background-size: 66px 45px;
+    background-repeat: no-repeat;
+}
+@keyframes gamesBoom {
+    from { 
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
